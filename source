@@ -1,0 +1,398 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local ENTER = Instance.new("TextButton")
+local ENTERKEY = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Windows = Instance.new("Frame")
+local sus = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local Home = Instance.new("TextButton")
+local Exe = Instance.new("TextButton")
+local HomeFrame = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local ExecuteFrame = Instance.new("Frame")
+local ExecuteButton = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Clear = Instance.new("TextButton")
+local SusFrame = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local CreditsFrame = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+MainFrame.Position = UDim2.new(0.38909775, 0, 0.180134684, 0)
+MainFrame.Size = UDim2.new(0, 234, 0, 243)
+
+ENTER.Name = "ENTER"
+ENTER.Parent = MainFrame
+ENTER.BackgroundColor3 = Color3.fromRGB(66, 245, 93)
+ENTER.Position = UDim2.new(0.158119664, 0, 0.794238687, 0)
+ENTER.Size = UDim2.new(0, 163, 0, 50)
+ENTER.Font = Enum.Font.GothamBold
+ENTER.Text = "ENTER"
+ENTER.TextColor3 = Color3.fromRGB(0, 0, 0)
+ENTER.TextScaled = true
+ENTER.TextSize = 14.000
+ENTER.TextWrapped = true
+
+ENTERKEY.Name = "ENTERKEY"
+ENTERKEY.Parent = MainFrame
+ENTERKEY.BackgroundColor3 = Color3.fromRGB(87, 87, 87)
+ENTERKEY.Position = UDim2.new(0.0769230798, 0, 0.213991776, 0)
+ENTERKEY.Size = UDim2.new(0, 200, 0, 50)
+ENTERKEY.Font = Enum.Font.GothamBold
+ENTERKEY.PlaceholderText = "ENTER KEY HERE"
+ENTERKEY.Text = ""
+ENTERKEY.TextColor3 = Color3.fromRGB(0, 0, 0)
+ENTERKEY.TextSize = 14.000
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0854700878, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 32)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "DEVIANT KEY SYSTEM"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0854700878, 0, 0.530864179, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Key: secret"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Windows.Name = "Windows"
+Windows.Parent = ScreenGui
+Windows.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Windows.BorderColor3 = Color3.fromRGB(255, 85, 0)
+Windows.Position = UDim2.new(0.265893668, 0, 0.181016907, 0)
+Windows.Size = UDim2.new(0, 370, 0, 245)
+Windows.Visible = false
+
+sus.Name = "sus"
+sus.Parent = Windows
+sus.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+sus.BorderColor3 = Color3.fromRGB(255, 85, 0)
+sus.Position = UDim2.new(0, 0, 0.538775504, 0)
+sus.Size = UDim2.new(0, 79, 0, 50)
+sus.Font = Enum.Font.Unknown
+sus.Text = "sus"
+sus.TextColor3 = Color3.fromRGB(0, 0, 0)
+sus.TextScaled = true
+sus.TextSize = 14.000
+sus.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Windows
+Credits.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Credits.BorderColor3 = Color3.fromRGB(255, 85, 0)
+Credits.Position = UDim2.new(0, 0, 0.795918345, 0)
+Credits.Size = UDim2.new(0, 79, 0, 50)
+Credits.Font = Enum.Font.GothamBold
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Home.Name = "Home"
+Home.Parent = Windows
+Home.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Home.BorderColor3 = Color3.fromRGB(255, 85, 0)
+Home.Position = UDim2.new(0, 0, -3.11403845e-08, 0)
+Home.Size = UDim2.new(0, 79, 0, 50)
+Home.Font = Enum.Font.GothamBold
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(0, 0, 0)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextWrapped = true
+
+Exe.Name = "Exe"
+Exe.Parent = Windows
+Exe.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Exe.BorderColor3 = Color3.fromRGB(255, 85, 0)
+Exe.Position = UDim2.new(0, 0, 0.269387782, 0)
+Exe.Size = UDim2.new(0, 79, 0, 50)
+Exe.Font = Enum.Font.GothamBold
+Exe.Text = "EXE"
+Exe.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exe.TextScaled = true
+Exe.TextSize = 14.000
+Exe.TextWrapped = true
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = Windows
+HomeFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeFrame.BackgroundTransparency = 1.000
+HomeFrame.Position = UDim2.new(0.237837836, 0, 0.0734693855, 0)
+HomeFrame.Size = UDim2.new(0, 282, 0, 210)
+
+TextLabel_3.Parent = HomeFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.0319148935, 0, 0.0476190485, 0)
+TextLabel_3.Size = UDim2.new(0, 291, 0, 177)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Hello, Ladies And Gentleman"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+ExecuteFrame.Name = "ExecuteFrame"
+ExecuteFrame.Parent = Windows
+ExecuteFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteFrame.BackgroundTransparency = 1.000
+ExecuteFrame.Position = UDim2.new(0.213513508, 0, 0, 0)
+ExecuteFrame.Size = UDim2.new(0, 291, 0, 245)
+ExecuteFrame.Visible = false
+
+ExecuteButton.Name = "ExecuteButton"
+ExecuteButton.Parent = ExecuteFrame
+ExecuteButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+ExecuteButton.BorderColor3 = Color3.fromRGB(255, 85, 0)
+ExecuteButton.Position = UDim2.new(0.0735051036, 0, 0.849085212, 0)
+ExecuteButton.Size = UDim2.new(0, 121, 0, 36)
+ExecuteButton.Font = Enum.Font.GothamBold
+ExecuteButton.Text = "Execute"
+ExecuteButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteButton.TextScaled = true
+ExecuteButton.TextSize = 14.000
+ExecuteButton.TextWrapped = true
+
+TextBox.Parent = ExecuteFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(87, 87, 87)
+TextBox.Position = UDim2.new(0.0481099673, 0, 0.0367346928, 0)
+TextBox.Size = UDim2.new(0, 270, 0, 173)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "--require scripts only"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+Clear.Name = "Clear"
+Clear.Parent = ExecuteFrame
+Clear.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Clear.BorderColor3 = Color3.fromRGB(255, 85, 0)
+Clear.Position = UDim2.new(0.582096159, 0, 0.849085212, 0)
+Clear.Size = UDim2.new(0, 121, 0, 36)
+Clear.Font = Enum.Font.GothamBold
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clear.TextScaled = true
+Clear.TextSize = 14.000
+Clear.TextWrapped = true
+
+SusFrame.Name = "SusFrame"
+SusFrame.Parent = Windows
+SusFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SusFrame.BackgroundTransparency = 1.010
+SusFrame.Position = UDim2.new(0.213513508, 0, 0, 0)
+SusFrame.Size = UDim2.new(0, 291, 0, 245)
+SusFrame.Visible = false
+
+TextLabel_4.Parent = SusFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0859106481, 0, -0.0489795953, 0)
+TextLabel_4.Size = UDim2.new(0, 266, 0, 268)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "WHY DID YOU CLICK THIS?!?"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = Windows
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsFrame.BackgroundTransparency = 1.000
+CreditsFrame.Position = UDim2.new(0.213513508, 0, 0, 0)
+CreditsFrame.Size = UDim2.new(0, 291, 0, 238)
+CreditsFrame.Visible = false
+
+TextLabel_5.Parent = CreditsFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.0206185561, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 285, 0, 245)
+TextLabel_5.Font = Enum.Font.GothamBold
+TextLabel_5.Text = "made by: MARI#4048"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+-- Scripts:
+
+local function URSPU_fake_script() -- ENTER.LocalScript 
+	local script = Instance.new('LocalScript', ENTER)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(URSPU_fake_script)()
+local function RZWQVEX_fake_script() -- MainFrame.Dragify 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(RZWQVEX_fake_script)()
+local function YJWWY_fake_script() -- sus.LocalScript 
+	local script = Instance.new('LocalScript', sus)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(YJWWY_fake_script)()
+local function XQDNX_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(XQDNX_fake_script)()
+local function NLMP_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(NLMP_fake_script)()
+local function CXTII_fake_script() -- Exe.LocalScript 
+	local script = Instance.new('LocalScript', Exe)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(CXTII_fake_script)()
+local function MQJVWQ_fake_script() -- ExecuteButton.Script 
+	local script = Instance.new('Script', ExecuteButton)
+
+	remote = script.Parent.RemoteEvent
+	
+	remote.OnServerEvent:Connect(function(idk, lol)
+		require(script.Loadstring)(lol)()
+	end)
+end
+coroutine.wrap(MQJVWQ_fake_script)()
+local function ALGVEEY_fake_script() -- ExecuteButton.Execute 
+	local script = Instance.new('LocalScript', ExecuteButton)
+
+	local button = script.Parent.MainFrame.Catogor.Exe.Execute
+	local text = script.Parent.MainFrame.Catogor.Exe.TextBox
+	local remote = script.Parent.MainFrame.Catogor.Exe.Execute.RemoteEvent
+	
+	button.MouseButton1Click:Connect(function()
+		remote:FireServer(text.Text)
+	end)
+end
+coroutine.wrap(ALGVEEY_fake_script)()
+local function KHONACS_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(KHONACS_fake_script)()
+local function AQDIMSY_fake_script() -- Windows.Dragify 
+	local script = Instance.new('LocalScript', Windows)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(AQDIMSY_fake_script)()
